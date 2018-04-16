@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<title>My Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://fonts.googleapis.com/earlyaccess/notosansjapanese.css">
+	<link rel="stylesheet" href="./css/style.css">
+
+	<!-- Meta -->
+	<meta name="description" content="ここは私のポートフォリオサイトです。">
+	<meta name="keywords" content="ポートフォリオ">
+	<meta name="robot" content="index,follow,archive">
+	<meta name="author" content="tatsu">
+	<meta name="language" content="ja">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="http://example.com/imgs/favicon.ico">
+</head>
+<body>
+        <nav>
+            <ul>
+                <li class="nav_main nav_prof">自己紹介</li>
+                <li class="nav_main nav_work">作品</li>
+                <ul>
+                    <li class="nav_block">ブロック崩し</li>
+                    <li class="nav_oke">風桶</li>
+                    <li class="nav_kamatte">かまってほしい</li>
+                </ul>
+            </ul>
+        </nav>
+        <div class="page orange">
+            <div class="prof_page">
+                <ul>
+                    <li class = "prof_tag">名前：石原辰基</li>
+                    <li class = "prof_tag">出身地：岐阜県美濃加茂市</li>
+                    <li class = "prof_tag">出身校：日本総合ビジネス専門学校</li>
+                    <li class = "prof_tag">SKILL:HTML,CSS,JavaScript</li>
+                </ul>
+            </div>
+        </div>
+        <div class="page magenta ">
+            <div class="work_page">
+                <div class="work">
+                    <div class="work_title nav_block">ブロック崩し</div>
+                </div>
+                <div class="work">
+                    <div class="work_title nav_oke">風桶</div>
+                </div>
+                <div class="work">
+                    <div class="work_title nav_kamatte">かまってほしい</div>
+                </div>
+            </div>
+        </div>
+        <div class="page cyan">
+            <div class="block_page">
+                <div class="block_title">ブロック崩し</div>
+                <div class="block_img"><img src="./img/block.jpg" width="100%" height = "100%"></div>
+                phina.jsを使用
+            </div>
+        </div>
+        <div class="page yellow">
+            <div class="oke_page">
+                <div class="oke_title">風桶</div>
+                <div class="oke_img"><img src="./img/oke.JPG" width="100%" height = "100%"></div>
+                現在地点の風速を取得して、表示されている数値に加算<br>
+                swift,OpenWeatherMapを使用
+            </div>
+        </div>
+        <div class="page green">
+            <div class="kamatte_page">
+                <div class="kamatte_title">かまってほしい</div>
+                <div class="kamatte_img">
+                    <img src="./img/kamatte.JPG" width="100%" height="100%">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0zxF8ox8570" frameborder="0" allowfullscreen></iframe>
+                </div>
+                放置されると音が鳴る<br>
+                Arduino,人感センサ,6軸センサを使用
+            </div>
+        </div>
+        <div class="page purple"><div class="main_page">My Portfolio</div></div>
+    <footer>&copyTATSUKI ISHIHARA</footer>
+
+	<script src="jquery-2.1.3.min.js"></script>
+	<script src="./bootstrap/js/bootstrap.min.js"></script>
+	<script src="./yarp.min.js"></script>
+	<script src="./main.js"></script>
+</body>
+</html>

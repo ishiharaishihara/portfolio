@@ -16,25 +16,13 @@ nav
     width:280px;
     color:white;
 }
-/*nav:after
-{
-    position:absolute;
-    top:0px;
-    left:280px;
-    content:"";
-    display:block;
-    width:0; 
-    height:0;
-    border:100px solid transparent;
-    border-left:solid 50px purple;
-    border-top:solid 50vh transparent;
-    border-bottom:solid 50vh transparent;
-    z-index:10;
-}
-*/
 nav ul
 {
     list-style-type:none;
+}
+nav > input
+{
+    display:none;
 }
 .page
 {
@@ -118,18 +106,6 @@ input
 {
     display:none;
 }
-input + *
-{
-    zindex:1;
-    animation-name:anime2;
-    animation-duration:1s;
-    -ms-animation-name:anime2;
-    -ms-animation-duration:1s;
-    -moz-animation-name:anime2;
-    -moz-animation-duration:1s;
-    -webkit-animation-name:anime2;
-    -webkit-animation-duration:1s;
-}
 input:checked + *
 {
     z-index:10;
@@ -144,10 +120,36 @@ input:checked + *
 }
 @keyframes anime1
 {
-    0%{transform:translateY(-100%);};
+    0%{transform:translateY(100%);};
     100%{transform:translate(0);};
 }
-@keyframes anime2
+@media screen and (max-width:959px)
 {
-    0%{transform:translateY(0);};
-    100%{transform:translate(-100%);};
+    nav
+    {
+        height:3em;
+        width:100%;
+    }
+    nav *
+    {
+        display:none;
+    }
+    nav > input[button]
+    {
+        height:3em;
+        display:block;
+        float:right;
+        color:black;
+    }
+    nav > ul > li > ul:first-child
+    {
+        display:inline;
+    }
+    .page
+    {
+        position:relative;
+        top:3em;
+        left:0px;
+        width:100%;
+    }
+}

@@ -55,6 +55,8 @@ nav ul
     margin:auto;
     width:100%;
     height:100%;
+    margin-top:3%;
+    margin-bottom:3%;
 }
 #block ~  .work .content ,#oke ~  .work .content
 {

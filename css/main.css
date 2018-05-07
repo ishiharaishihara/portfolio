@@ -69,6 +69,7 @@ nav ul
     background-repeat:no-repeat;
     background-size:contain;
     color:white;
+    height:calc(100% - 100px);
 }
 .tall
 {

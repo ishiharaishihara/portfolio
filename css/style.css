@@ -26,7 +26,7 @@
         height:100%;
         background-color:green;
     }
-    .purple
+/*    .purple
     {
         background-color:purple;
     }
@@ -42,6 +42,7 @@
     {
         position:absolute;
     }
+*/
     .active
     {
         z-index:1;
@@ -93,10 +94,7 @@
         line-height:2em;
         cursor:pointer;
     }
-    .nav_main
-    {
-        font-size:3em;
-    }
+/*
     div[class~="cyan"][class~="active"],div[class~="yellow"][class~="active"]
     {
         min-height:calc(1000px + 10vh);
@@ -113,12 +111,12 @@
     {
         min-height:calc(455px + 33vh);
     }
+*/
     .main_page
     {
         position:relative;
         top:30vh;
         left:33%;
-        font-size:8em;
 
     }
     .prof_page
@@ -126,7 +124,6 @@
         position:relative;
         top:30vh;
         left:33%;
-        font-size:2em;
         line-height:2em;
     }
     .work_page
@@ -134,7 +131,6 @@
         position:relative;
         top:30vh;
         left:36%;
-        font-size:3em;
         line-height:2em;
     }
     .work_title
@@ -146,7 +142,6 @@
         position:relative;
         top:5vh;
         left:36%;
-        font-size:2em;
     }
     .oke_img,.block_img
     {
@@ -162,7 +157,6 @@
         position:relative;
         top:20vh;
         left:36%;
-        font-size:2em;
     }
     .kamatte_img>img{
         max-width:800px;
@@ -177,7 +171,6 @@
 {
     nav{
         width:100%;
-        font-size:2em;
     }
     ul
     {
@@ -203,14 +196,12 @@
     {
         top:33vh;
         left:0%;
-        font-size:4em;
 
     }
     .prof_page
     {
         top:18vh;
         left:0%;
-        font-size:2em;
     }
     .prof_page ul
     {
@@ -221,13 +212,11 @@
     {
         top:25%;
         left:0%;
-        font-size:3em;
         line-height:2em;
     }
     .oke_page,.block_page
     {
         top:15vh;
-        font-size:2em;
     }
     .oke_img,.block_img
     {
@@ -242,7 +231,6 @@
     .kamatte_page
     {
         top:15vh;
-        font-size:2em;
     }
     .kamatte_img{
         position:relative;
@@ -253,6 +241,7 @@
         0%{transform:translateY(-100%);};
         100%{transform:translate(0);};
     }
+/*
     div[class~="cyan"][class~="active"],div[class~="yellow"][class~="active"]
     {
         min-height:150vw;
@@ -269,3 +258,4 @@
     {
         min-height:50vw;
     }
+*/

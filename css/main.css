@@ -1,0 +1,153 @@
+html
+{
+    height:100%;
+}
+body
+{
+    height:100%;
+}
+nav
+{
+    position:fixed;
+    font-weight:bold;
+    background-color:white;
+    height:100%;
+    background-color:purple;
+    width:280px;
+    color:white;
+}
+/*nav:after
+{
+    position:absolute;
+    top:0px;
+    left:280px;
+    content:"";
+    display:block;
+    width:0; 
+    height:0;
+    border:100px solid transparent;
+    border-left:solid 50px purple;
+    border-top:solid 50vh transparent;
+    border-bottom:solid 50vh transparent;
+    z-index:10;
+}
+*/
+nav ul
+{
+    list-style-type:none;
+}
+.page
+{
+    position:fixed;
+    top:0px;
+    left:280px;
+    background-color:white;
+    height:100vh;
+    width:calc(100% - 280px);
+    overflow:auto;
+}
+.background
+{
+    background-color:black;
+}
+.content
+{
+    margin:auto;
+    width:100%;
+    height:100%;
+}
+#block ~  .work .content ,#oke ~  .work .content
+{
+    max-width:400px;
+}
+#kamatte ~ .work .content
+{
+    max-width:800px;
+}
+.image
+{
+    background-repeat:no-repeat;
+    background-size:contain;
+    color:white;
+    height:calc(100% - 100px);
+}
+.tall
+{
+    max-height:1000px;
+}
+.movie.wide
+{
+    position:relative;
+    width:100%;
+}
+.movie.wide:before
+{
+    content:"";
+    display:block;
+    padding-top:calc(100vw * 2160 / 3840 - 280px);
+}
+.movie.wide > iframe
+{
+    position:absolute;
+    top:0px;
+    left:0px;
+    width:calc( (100vw * 2160 / 3840 - 280px) / (2169 / 3840) );
+    max-width:800px;
+    height:100%;
+
+}
+.prof>.content>div
+{
+    max-width:800px;
+    margin:auto;
+}
+#block + .work .image
+{
+    background-image:url('../img/block.jpg');
+}
+#oke + .work .image
+{
+    background-image:url('../img/oke.JPG');
+}
+#kamatte + .work .image
+{
+    background-image:url('../img/kamatte.JPG');
+    height:calc(100vw * 2160 / 3840 - 280px);
+}
+input
+{
+    display:none;
+}
+input + *
+{
+    zindex:1;
+    animation-name:anime2;
+    animation-duration:1s;
+    -ms-animation-name:anime2;
+    -ms-animation-duration:1s;
+    -moz-animation-name:anime2;
+    -moz-animation-duration:1s;
+    -webkit-animation-name:anime2;
+    -webkit-animation-duration:1s;
+}
+input:checked + *
+{
+    z-index:10;
+    animation-name:anime1;
+    animation-duration:1s;
+    -ms-animation-name:anime1;
+    -ms-animation-duration:1s;
+    -moz-animation-name:anime1;
+    -moz-animation-duration:1s;
+    -webkit-animation-name:anime1;
+    -webkit-animation-duration:1s;
+}
+@keyframes anime1
+{
+    0%{transform:translateY(-100%);};
+    100%{transform:translate(0);};
+}
+@keyframes anime2
+{
+    0%{transform:translateY(0);};
+    100%{transform:translate(-100%);};
